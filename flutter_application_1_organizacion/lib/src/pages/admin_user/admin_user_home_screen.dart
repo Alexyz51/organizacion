@@ -27,7 +27,15 @@ class AdminUserHomeScreen extends StatelessWidget {
                   Navigator.pushNamed(context, 'edit_list');
                 },
               ),
-              // Otras opciones se pueden agregar más adelante
+              ListTile(
+                leading: const Icon(Icons.supervised_user_circle_sharp),
+                title: const Text('Usuarios'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.pushNamed(context, 'users_list');
+                },
+              ),
+              // Otras opciones se pueden agregar despuess
             ],
           ),
         ),
